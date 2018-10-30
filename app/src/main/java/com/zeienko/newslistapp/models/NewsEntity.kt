@@ -8,5 +8,6 @@ data class NewsEntity(
     var hitsPerPage: Int? = null,
     var processingTimeMS: Int? = null,
     var query: String? = null,
-    var params: String? = null
+    var params: String? = null,
+    var exhaustiveNbHits: Boolean? = null
 )
