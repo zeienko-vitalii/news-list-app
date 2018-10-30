@@ -1,13 +1,10 @@
 package com.zeienko.newslistapp.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.zeienko.newslistapp.R
+import androidx.fragment.app.Fragment
+import com.zeienko.newslistapp.ui.fragments.NewsListFragment
 
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : AbstractActivity() {
+    override fun createFragment(): Fragment {
+        return NewsListFragment.newInstance()
     }
 }
